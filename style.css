@@ -1,0 +1,67 @@
+/* 使用 CSS 让卡片背景半透明，给卡片添加圆角和阴影效果，确保整体美观。
+定义计数按钮和背景变换按钮的样式，统一设计风格，例如设置按钮颜色、字体、大小、圆角边框等。
+为按钮添加悬停效果，使交互更生动。 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: '微软雅黑', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  
+  /* 卡片样式 */
+  .card {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+    
+  /*按钮样式*/
+  .button {
+    
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px);
+    color: white;           
+    border: 1px solid #ccc; 
+    border-radius: 5px;     
+    padding: 15px 20px;     
+    cursor: pointer;      
+    outline: none;    
+    margin :0 10px;
+    display: flex; /* 使用flex布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+   align-items: center; /* 子元素水平居中 */
+  }
+  #numberDisplay
+  {
+    font-size: 100px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .buttoncontainer
+  {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  .numbercontainer
+  {
+    text-align: center; /* 数字容器文本居中 */
+  }
+  
